@@ -1,37 +1,4 @@
-# Taiko documentation website
+command to check prover relayer logs for L2 there is wrong command.
+Link : https://taiko.xyz/docs/guides/run-a-node/enable-a-prover#verify-prover-logs
 
-## Install pnpm
-
-Make sure you have pnpm installed on your system. You can install it by npm as well:
-
-```sh
-npm install -g pnpm
-```
-
-or on any POSIX systems by wget one-line official command:
-
-```sh
-wget -qO- https://get.pnpm.io/install.sh | sh -
-```
-
-for any specific cases or systems check the official page: https://pnpm.io/installation.
-
-## Install dependencies
-
-```sh
-pnpm install
-```
-
-## Start a local development server
-
-```sh
-pnpm dev
-```
-
-## Create redirects for broken links
-
-Look at [next.config.js](./next.config.js) and [nextjs redirect docs](https://nextjs.org/docs/pages/api-reference/next-config-js/redirects).
-
-## Contributing
-
-Refer to [CONTRIBUTING.md](../../CONTRIBUTING.md).
+For L2 node should use the command docker compose logs -f taiko_client_prover_relayer instead but in there is docker compose logs -f l3_taiko_client_prover_relayer which should be for the L3 node
